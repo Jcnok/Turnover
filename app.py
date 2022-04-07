@@ -150,6 +150,9 @@ if pagina == 'Demonstação':
         st.markdown('### Id, Sexo e probabilidade dos funcionários que o modelo classificou como propenso ao Turnover!')
         st.write(pred.query('Label == "SIM"')[['func_sexo','Score']].sort_values('Score', ascending=False))
         pred.to_csv('dados_preditos.csv',sep=';', decimal=',')
+        !git add dados_preditos.csv
+        !git commit -m "envio do arquivo de predição"
+        !git push
         
       
 
