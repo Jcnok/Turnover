@@ -26,7 +26,7 @@ st.set_page_config(
     initial_sidebar_state='auto',
     menu_items=None)
 paginas = ['Home','Case1','Análise de Turnover', 'Case2', "Demonstação", "Predição de turnover"]
-site = "https://app.powerbi.com/view?r=eyJrIjoiMjczNmY0MzgtMjE1ZC00ZWY4LTkxMmEtNzNhNTI0ZDg2MzFjIiwidCI6Ijk4ZjkwMzVmLTZkOWMtNDBmMy1hNDI0LWI0NDY0M2NjMmYyZiJ9&pageName=ReportSection"
+site = "https://app.powerbi.com/view?r=eyJrIjoiZmM5MDAwMDAtYmM3Mi00MjE5LTllZTUtNDcxYjY3NTVjMDAxIiwidCI6Ijk4ZjkwMzVmLTZkOWMtNDBmMy1hNDI0LWI0NDY0M2NjMmYyZiJ9&embedImagePlaceholder=true"
 ###### SIDE BAR ######
 col1, col2, col3 = st.sidebar.columns([0.5, 1, 1])
 with col2:
@@ -47,7 +47,7 @@ if pagina == 'Home':
     
     O objetivo aqui é demonstrar os benefícios que essas tecnologias podem oferecer dentro da visão do negócio, 
     procurei não utilizar termos técnicos e nem a parte de tratamento e técnicas utilizadas para criação do projeto, caso tenham interesse, 
-    todos os arquivos podem ser acessados no meu [GitHub](https://github.com/Jcnok/curso_Flai).
+    todos os arquivos podem ser acessados no meu [GitHub](https://github.com/Jcnok/turnover).
         
     """)
 ###### PAGINA CASE1 ######
@@ -122,7 +122,7 @@ if pagina == 'Case2':
 ###### Demonstação do modelo de machine learning ######
 if pagina == 'Demonstação':
     st.sidebar.write("""Nesse exemplo: o cliente irá carregar a outra parte da base de dados que não possuímos, essa base deve estar no mesmo formato da primeira base.
-    obs.: caso desejado poderá utilizar o arquivo 'teste_base.csv' basta copiar esse link: [teste_base.csv](https://raw.githubusercontent.com/Jcnok/streamlit/main/teste_base.csv) ao clicar em Browse files cole o caminho e clique em abrir.
+    obs.: caso desejado poderá utilizar o arquivo 'teste_base.csv' basta copiar esse link: [teste_base.csv](https://raw.githubusercontent.com/Jcnok/turnover/main/teste_base.csv) ao clicar em Browse files cole o caminho e clique em abrir.
      
     """)
 
