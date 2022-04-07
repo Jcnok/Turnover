@@ -150,7 +150,7 @@ if pagina == 'Demonstação':
         Em um total de {classe_label_sim} chutes, o modelo foi capaz de identificar {count_pred_Label} funcionários, dos {count_total} que realmente saíram por algum motivo. Dentro da lista, o modelo encontrou {round((recal * 100),2)}% de todos os funcionários que deram turnover. Lembrando que apesar de um bom resultado, essa é apenas uma demonstração. Podemos facilmente melhorar essa precisão.'''
         st.subheader(result)
         st.markdown("---")
-        st.markdown('### Id, Sexo e probabilidade dos funcionários que o modelo classificou como propenso ao Turnover!')
+        st.markdown('### Caso desejado você podem realizar o download do resultado no formato .csv clicando logo abaixo!')
         #st.write(pred.query('Label == "SIM"')[['func_sexo','Score']].sort_values('Score', ascending=False))
         #pred.to_csv('dados_preditos.csv',sep=';', decimal=',') # Salvando o modelo para incluí-lo no powerbi.
         @st.cache
