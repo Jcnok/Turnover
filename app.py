@@ -1,3 +1,5 @@
+from os import sep
+from git import Git
 import pandas as pd
 import numpy as np 
 import streamlit as st
@@ -150,10 +152,17 @@ if pagina == 'Demonstação':
         st.markdown('### Id, Sexo e probabilidade dos funcionários que o modelo classificou como propenso ao Turnover!')
         st.write(pred.query('Label == "SIM"')[['func_sexo','Score']].sort_values('Score', ascending=False))
         pred.to_csv('dados_preditos.csv',sep=';', decimal=',')
-        !git add dados_preditos.csv
-        !git commit -m "envio do arquivo de predição"
-        !git push
-        
+        @st.cache
+        def convert_df(df):
+            # IMPORTANT: Cache the conversion to prevent computation on every rerun        
+            return df.to_csv(sep=';',decimal=',').encode('utf-8')               
+        csv = convert_df(pred)    
+        st.download_button(
+        label="Download do aquivo .CSV",
+        data=csv,
+        file_name='predict.csv',
+        mime='text/csv',
+        )
       
 
 ###### Modelo de predição ######
