@@ -30,7 +30,7 @@ site = "https://app.powerbi.com/view?r=eyJrIjoiZmM5MDAwMDAtYmM3Mi00MjE5LTllZTUtN
 ###### SIDE BAR ######
 col1, col2, col3 = st.sidebar.columns([0.5, 1, 1])
 with col2:
-    image1 = Image.open('Logo_size.jpg')
+    image1 = Image.open('logo_size.jpg')
     st.image(image1, width=120)
     pagina = st.sidebar.selectbox("Navegação", paginas)
 ###### PAGINA INICIAL ######
