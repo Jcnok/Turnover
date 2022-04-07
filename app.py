@@ -169,6 +169,9 @@ if pagina == 'Demonstação':
 ###### Modelo de predição ######
 if pagina == 'Predição de turnover':
     st.markdown('### Selecione as opções de acordo com os dados do funcionário e execute o modelo!')
+    st.sidebar.write("""Aqui o cliente consegue selecionar os dados do perfil do funcinário de forma individual.
+     O modelo irá informar se esse perfil tem ou não uma tendência maior ao turnover em menos de 1 ano.
+    """)
 
     st.markdown('---')    
     sexo = st.radio('Selecione o Sexo',['MASCULINO', 'FEMININO'])
