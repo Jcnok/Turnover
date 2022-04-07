@@ -27,8 +27,9 @@ st.set_page_config(
     layout="wide", #centered",
     initial_sidebar_state='auto',
     menu_items=None)
-paginas = ['Home','Case1','Análise de Turnover', 'Case2', "Demonstação", "Predição de turnover"]
+paginas = ['Home','Case1','Análise de Turnover', 'Case2', "Demonstação", "Predição de turnover", "Dashbord comparativo"]
 site = "https://app.powerbi.com/view?r=eyJrIjoiZmM5MDAwMDAtYmM3Mi00MjE5LTllZTUtNDcxYjY3NTVjMDAxIiwidCI6Ijk4ZjkwMzVmLTZkOWMtNDBmMy1hNDI0LWI0NDY0M2NjMmYyZiJ9&embedImagePlaceholder=true"
+site_pred = "https://app.powerbi.com/view?r=eyJrIjoiZTFhYjYyNWYtMTk4ZS00NGViLWFkM2YtNzVlMDM4NGM4NTc4IiwidCI6Ijk4ZjkwMzVmLTZkOWMtNDBmMy1hNDI0LWI0NDY0M2NjMmYyZiJ9"
 ###### SIDE BAR ######
 col1, col2, col3 = st.sidebar.columns([0.5, 1, 1])
 with col2:
@@ -150,8 +151,8 @@ if pagina == 'Demonstação':
         st.subheader(result)
         st.markdown("---")
         st.markdown('### Id, Sexo e probabilidade dos funcionários que o modelo classificou como propenso ao Turnover!')
-        st.write(pred.query('Label == "SIM"')[['func_sexo','Score']].sort_values('Score', ascending=False))
-        pred.to_csv('dados_preditos.csv',sep=';', decimal=',')
+        #st.write(pred.query('Label == "SIM"')[['func_sexo','Score']].sort_values('Score', ascending=False))
+        #pred.to_csv('dados_preditos.csv',sep=';', decimal=',') # Salvando o modelo para incluí-lo no powerbi.
         @st.cache
         def convert_df(df):
             # IMPORTANT: Cache the conversion to prevent computation on every rerun        
@@ -203,6 +204,15 @@ if pagina == 'Predição de turnover':
                     Com uma probabilidede de {prob}%, o modelo identificou que esse funcionário tem uma maior tendência em permanecer na empresa por mais de 1 ano                    ''' 
       
         st.subheader(result)
+###### Dashboard Compartivo ######
+if pagina == 'Dashbord comparativo':    
+    st.subheader("Dashboard compartivo entre o resultado real Vs resultado do modelo")    
+    col1,col2,col3 = st.columns([1,2,3])
+    st.components.v1.iframe(site_pred, width=1400, height=800, scrolling=True)
+
+    st.sidebar.write("""O Dashbord é interativo, posicione o mouse sobre os gráficos para obter o comparativo de acertos, entre turnover e a quantidade de demissões,
+    por segmento.    
+    """)
         
         
 
