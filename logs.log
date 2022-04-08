@@ -3373,3 +3373,147 @@
                                   n_jobs=-1, voting='soft')]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
 2022-04-07 01:52:38,817:INFO:Checking exceptions
 2022-04-07 01:52:38,818:INFO:Preloading libraries
+2022-04-07 03:22:09,714:INFO:Initializing load_model()
+2022-04-07 03:22:09,715:INFO:load_model(model_name=./comb_soft_model, platform=None, authentication=None, verbose=True)
+2022-04-07 03:22:10,214:INFO:Initializing predict_model()
+2022-04-07 03:22:10,215:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['index',
+                                                       'func_deficiencia'],
+                                      ml_usecase='classification',
+                                      target='turnover_apos_1_ano')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',...
+                                                                      min_impurity_decrease=0.002,
+                                                                      min_samples_leaf=3,
+                                                                      min_samples_split=7,
+                                                                      n_estimators=240,
+                                                                      n_jobs=-1,
+                                                                      random_state=777)),
+                                              ('ada',
+                                               AdaBoostClassifier(learning_rate=0.1,
+                                                                  n_estimators=100,
+                                                                  random_state=777)),
+                                              ('dt',
+                                               DecisionTreeClassifier(max_depth=4,
+                                                                      max_features=1.0,
+                                                                      min_impurity_decrease=0.005,
+                                                                      min_samples_leaf=2,
+                                                                      min_samples_split=9,
+                                                                      random_state=777))],
+                                  n_jobs=-1, voting='soft')]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2022-04-07 03:22:10,217:INFO:Checking exceptions
+2022-04-07 03:22:10,218:INFO:Preloading libraries
+2022-04-07 03:23:05,898:INFO:Initializing load_model()
+2022-04-07 03:23:05,900:INFO:load_model(model_name=./comb_soft_model, platform=None, authentication=None, verbose=True)
+2022-04-07 03:23:06,325:INFO:Initializing predict_model()
+2022-04-07 03:23:06,326:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['index',
+                                                       'func_deficiencia'],
+                                      ml_usecase='classification',
+                                      target='turnover_apos_1_ano')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',...
+                                                                      min_impurity_decrease=0.002,
+                                                                      min_samples_leaf=3,
+                                                                      min_samples_split=7,
+                                                                      n_estimators=240,
+                                                                      n_jobs=-1,
+                                                                      random_state=777)),
+                                              ('ada',
+                                               AdaBoostClassifier(learning_rate=0.1,
+                                                                  n_estimators=100,
+                                                                  random_state=777)),
+                                              ('dt',
+                                               DecisionTreeClassifier(max_depth=4,
+                                                                      max_features=1.0,
+                                                                      min_impurity_decrease=0.005,
+                                                                      min_samples_leaf=2,
+                                                                      min_samples_split=9,
+                                                                      random_state=777))],
+                                  n_jobs=-1, voting='soft')]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2022-04-07 03:23:06,328:INFO:Checking exceptions
+2022-04-07 03:23:06,330:INFO:Preloading libraries
+2022-04-07 07:36:20,773:INFO:Initializing load_model()
+2022-04-07 07:36:20,774:INFO:load_model(model_name=./comb_soft_model, platform=None, authentication=None, verbose=True)
+2022-04-07 07:36:21,150:INFO:Initializing predict_model()
+2022-04-07 07:36:21,150:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['index',
+                                                       'func_deficiencia'],
+                                      ml_usecase='classification',
+                                      target='turnover_apos_1_ano')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',...
+                                                                      min_impurity_decrease=0.002,
+                                                                      min_samples_leaf=3,
+                                                                      min_samples_split=7,
+                                                                      n_estimators=240,
+                                                                      n_jobs=-1,
+                                                                      random_state=777)),
+                                              ('ada',
+                                               AdaBoostClassifier(learning_rate=0.1,
+                                                                  n_estimators=100,
+                                                                  random_state=777)),
+                                              ('dt',
+                                               DecisionTreeClassifier(max_depth=4,
+                                                                      max_features=1.0,
+                                                                      min_impurity_decrease=0.005,
+                                                                      min_samples_leaf=2,
+                                                                      min_samples_split=9,
+                                                                      random_state=777))],
+                                  n_jobs=-1, voting='soft')]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2022-04-07 07:36:21,152:INFO:Checking exceptions
+2022-04-07 07:36:21,153:INFO:Preloading libraries
+2022-04-07 07:40:09,896:INFO:Initializing load_model()
+2022-04-07 07:40:09,898:INFO:load_model(model_name=./comb_soft_model, platform=None, authentication=None, verbose=True)
+2022-04-07 07:40:10,290:INFO:Initializing predict_model()
+2022-04-07 07:40:10,291:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['index',
+                                                       'func_deficiencia'],
+                                      ml_usecase='classification',
+                                      target='turnover_apos_1_ano')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',...
+                                                                      min_impurity_decrease=0.002,
+                                                                      min_samples_leaf=3,
+                                                                      min_samples_split=7,
+                                                                      n_estimators=240,
+                                                                      n_jobs=-1,
+                                                                      random_state=777)),
+                                              ('ada',
+                                               AdaBoostClassifier(learning_rate=0.1,
+                                                                  n_estimators=100,
+                                                                  random_state=777)),
+                                              ('dt',
+                                               DecisionTreeClassifier(max_depth=4,
+                                                                      max_features=1.0,
+                                                                      min_impurity_decrease=0.005,
+                                                                      min_samples_leaf=2,
+                                                                      min_samples_split=9,
+                                                                      random_state=777))],
+                                  n_jobs=-1, voting='soft')]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2022-04-07 07:40:10,292:INFO:Checking exceptions
+2022-04-07 07:40:10,293:INFO:Preloading libraries
