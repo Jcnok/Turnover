@@ -5,4 +5,6 @@
 
 ### O objetivo aqui é demonstrar os benefícios que essas tecnologias podem oferecer dentro da visão do negócio. Link do projeto para testarem:[Analise_turnover](https://share.streamlit.io/jcnok/turnover/main/app.py)
 
+![Screenshot](untitled.png)
+![Screenshot](untitled3.png)
 
