@@ -3,7 +3,7 @@ from git import Git
 import pandas as pd
 import numpy as np 
 import streamlit as st
-from pycaret.classification import load_model, predict_model
+from pycaret.classification import *
 from pycaret import *
 import PIL
 from PIL import Image
